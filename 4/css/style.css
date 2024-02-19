@@ -125,7 +125,7 @@ a {
   right: 0;
   width: 280px;
   height: 290px;
-  background: url("../../img/catalog-backround-cat-gift.jpg") center no-repeat;
+  background: url("../img/catalog-backround-cat-gift.jpg") center no-repeat;
 }
 
 .additional-products__text {
@@ -145,7 +145,7 @@ a {
   transform: translateX(50%);
   width: 78px;
   height: 80px;
-  background: url("../../img/icons/icon_gift.svg") center no-repeat;
+  background: url("../img/icons/icon_gift.svg") center no-repeat;
 }
 
 .button {
@@ -562,12 +562,12 @@ a {
 .form__input--email {
   width: 217px;
   padding-right: 37px;
-  background: url("../../img/icons/email-input.svg") 183px no-repeat;
+  background: url("../img/icons/email-input.svg") 183px no-repeat;
 }
 .form__input--tel {
   width: 200px;
   padding-right: 37px;
-  background: url("../../img/icons/phone-input.svg") 166px no-repeat;
+  background: url("../img/icons/phone-input.svg") 166px no-repeat;
 }
 
 .form__label:hover .form__radio, .form__label:hover .form__checkbox {
@@ -642,7 +642,7 @@ a {
   transform: translate(-50%, -50%);
   width: 18px;
   height: 14px;
-  background: url("../../img/icons/checkbox.svg") center no-repeat;
+  background: url("../img/icons/checkbox.svg") center no-repeat;
 }
 
 .form__button {
@@ -740,7 +740,7 @@ a {
   height: 24px;
   top: 0;
   right: 0;
-  background: url("../../img/icons/burger.svg") center no-repeat;
+  background: url("../img/icons/burger.svg") center no-repeat;
 }
 
 .nav__toggle {
@@ -907,7 +907,7 @@ a {
   left: -63px;
   width: 36px;
   height: 50px;
-  background: url("../../img/icons/cat-slim.svg") center no-repeat;
+  background: url("../img/icons/cat-slim.svg") center no-repeat;
 }
 .programs-list__title--pro::after {
   content: "";
@@ -916,7 +916,7 @@ a {
   left: -78px;
   width: 67px;
   height: 28px;
-  background: url("../../img/icons/cat-mass.svg") center no-repeat;
+  background: url("../img/icons/cat-mass.svg") center no-repeat;
 }
 
 .programs-list__text {
@@ -958,12 +958,12 @@ a {
   transform: translateY(-50%);
   width: 24px;
   height: 10px;
-  background: url("../../img/icons/arrow.svg") center no-repeat;
+  background: url("../img/icons/arrow.svg") center no-repeat;
 }
 .programs-list__link:hover::after {
   right: -47px;
   width: 32px;
-  background: url("../../img/icons/arrow-hov.svg") center no-repeat;
+  background: url("../img/icons/arrow-hov.svg") center no-repeat;
 }
 
 .programs {
@@ -989,7 +989,7 @@ a {
   right: -20px;
   width: 320px;
   height: 302px;
-  background: url("../../img/index-background-cat.jpg") center no-repeat;
+  background: url("../img/index-background-cat.jpg") center no-repeat;
 }
 .programs__title::after {
   content: "";
@@ -1050,16 +1050,16 @@ a {
   height: 60px;
 }
 .work-principle__item--leaf::before {
-  background: var(--color-accent) url("../../img/icons/how-it-works-leaf.svg") center no-repeat;
+  background: var(--color-accent) url("../img/icons/how-it-works-leaf.svg") center no-repeat;
 }
 .work-principle__item--bowl::before {
-  background: var(--color-accent) url("../../img/icons/how-it-works-bowl.svg") center no-repeat;
+  background: var(--color-accent) url("../img/icons/how-it-works-bowl.svg") center no-repeat;
 }
 .work-principle__item--utensil::before {
-  background: var(--color-accent) url("../../img/icons/how-it-works-utensil.svg") center no-repeat;
+  background: var(--color-accent) url("../img/icons/how-it-works-utensil.svg") center no-repeat;
 }
 .work-principle__item--clock::before {
-  background: var(--color-accent) url("../../img/icons/how-it-works-clock.svg") center no-repeat;
+  background: var(--color-accent) url("../img/icons/how-it-works-clock.svg") center no-repeat;
 }
 
 .work-principle__text {
