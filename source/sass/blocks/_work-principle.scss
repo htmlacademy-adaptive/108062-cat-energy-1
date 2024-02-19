@@ -28,19 +28,19 @@
   }
 
   &--leaf::before {
-    background: var(--color-accent) url("../../img/icons/how-it-works-leaf.svg") center no-repeat;
+    background: var(--color-accent) url("../img/icons/how-it-works-leaf.svg") center no-repeat;
   }
 
   &--bowl::before {
-    background: var(--color-accent) url("../../img/icons/how-it-works-bowl.svg") center no-repeat;
+    background: var(--color-accent) url("../img/icons/how-it-works-bowl.svg") center no-repeat;
   }
 
   &--utensil::before {
-    background: var(--color-accent) url("../../img/icons/how-it-works-utensil.svg") center no-repeat;
+    background: var(--color-accent) url("../img/icons/how-it-works-utensil.svg") center no-repeat;
   }
 
   &--clock::before {
-    background: var(--color-accent) url("../../img/icons/how-it-works-clock.svg") center no-repeat;
+    background: var(--color-accent) url("../img/icons/how-it-works-clock.svg") center no-repeat;
   }
 }
 
