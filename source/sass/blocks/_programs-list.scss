@@ -1,0 +1,104 @@
+.programs-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.programs-list__item {
+  padding: 30px 20px 18px;
+  background-color: var(--color-grey-light);
+}
+
+.programs-list__title {
+  position: relative;
+  margin: 0 auto 29px 70px;
+  font-family: var(--font-famili-oswald);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.54;
+  text-transform: uppercase;
+  color: var(--color-dark);
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: -70px;
+    transform: translateY(50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--color-accent);
+  }
+
+  &--slim::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: -63px;
+    width: 36px;
+    height: 50px;
+    background: url("../../img/icons/cat-slim.svg") center no-repeat;
+  }
+
+  &--pro::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -78px;
+    width: 67px;
+    height: 28px;
+    background: url("../../img/icons/cat-mass.svg") center no-repeat;
+  }
+}
+
+.programs-list__text {
+  position: relative;
+  max-width: 230px;
+  margin-bottom: 38px;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--color-grey);
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -13px;
+    bottom: -23px;
+    left: 0;
+    height: 1px;
+    background-color: var(--color-grey-spec-2);
+  }
+}
+
+.programs-list__link {
+  position: relative;
+  font-family: var(--font-famili-oswald);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-dark);
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -39px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 10px;
+    background: url("../../img/icons/arrow.svg") center no-repeat;
+  }
+
+  &:hover::after {
+    right: -47px;
+    width: 32px;
+    background: url("../../img/icons/arrow-hov.svg") center no-repeat;
+  }
+}

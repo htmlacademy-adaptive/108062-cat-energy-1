@@ -1,0 +1,53 @@
+.work-principle__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: var(--font-famili-oswald);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--color-dark);
+}
+
+.work-principle__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.work-principle__item {
+  min-height: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  &--leaf::before {
+    background: var(--color-accent) url("../../img/icons/how-it-works-leaf.svg") center no-repeat;
+  }
+
+  &--bowl::before {
+    background: var(--color-accent) url("../../img/icons/how-it-works-bowl.svg") center no-repeat;
+  }
+
+  &--utensil::before {
+    background: var(--color-accent) url("../../img/icons/how-it-works-utensil.svg") center no-repeat;
+  }
+
+  &--clock::before {
+    background: var(--color-accent) url("../../img/icons/how-it-works-clock.svg") center no-repeat;
+  }
+}
+
+.work-principle__text {
+  max-width: 200px;
+  margin-left: 80px;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--color-grey);
+}

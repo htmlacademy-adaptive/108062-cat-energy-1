@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 14px;
+
+  &--underline {
+    border-bottom: 1px solid var(--color-grey-spec-2);
+  }
+}
+
+.header__nav {
+  position: relative;
+}

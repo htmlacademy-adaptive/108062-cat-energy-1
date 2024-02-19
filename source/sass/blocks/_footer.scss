@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--color-grey-light);
+}
+
+.footer__logo {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 280px;
+    height: 1px;
+    background-color: var(--color-grey-spec-2);
+  }
+}
+
+.footer__socials {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 280px;
+    height: 1px;
+    background-color: var(--color-grey-spec-2);
+  }
+}

@@ -1,0 +1,84 @@
+.compare {
+  position: relative;
+  display: flex;
+}
+
+.compare__button {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    & rect {
+      stroke: var(--color-accent);
+    }
+
+    & path {
+      fill: var(--color-accent);
+    }
+  }
+
+  &:active {
+    & rect {
+      stroke: var(--color-accent-alt);
+      opacity: 0.6;
+    }
+
+    & path {
+      fill: var(--color-accent-alt);
+      opacity: 0.6;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -108px;
+    right: 50%;
+    bottom: 38px;
+    transform: translateX(50%);
+    width: 4px;
+    border-radius: 2px;
+    background-color: var(--color-grey-2);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 50%;
+    bottom: -108px;
+    transform: translateX(50%);
+    width: 4px;
+    border-radius: 2px;
+    background-color: var(--color-grey-2);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: var(--color-accent);
+  }
+
+  &:active::before,
+  &:active::after {
+    background: var(--color-accent-alt);
+    opacity: 0.6;
+  }
+}
+
+.compare__button-img {
+  & rect {
+    stroke: var(--color-grey-2);
+  }
+
+  & path {
+    fill: var(--color-grey-2);
+  }
+}
