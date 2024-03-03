@@ -1,0 +1,33 @@
+.location__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  &--dark {
+    background-color: var(--color-grey-light);
+  }
+}
+
+.location__text {
+  max-width: 140px;
+  margin: 0;
+  font-family: var(--font-family-second);
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--color-grey-darkest);
+}
+
+.location__address {
+  max-width: 140px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--color-grey);
+}
+
+.location__img {
+  display: block;
+  margin: 0 auto;
+}

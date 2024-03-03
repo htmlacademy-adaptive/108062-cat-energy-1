@@ -1,0 +1,54 @@
+.work-principle__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--color-dark);
+}
+
+.work-principle__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.work-principle__item {
+  min-height: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    aspect-ratio: 1;
+    background: var(--color-accent) var(--image, url("../img/icons/how-it-works-leaf.svg")) center no-repeat;
+  }
+
+  &--leaf {
+    --image: url("../img/icons/how-it-works-leaf.svg");
+  }
+
+  &--bowl {
+    --image: url("../img/icons/how-it-works-bowl.svg");
+  }
+
+  &--utensil {
+    --image: url("../img/icons/how-it-works-utensil.svg");
+  }
+
+  &--clock {
+    --image: url("../img/icons/how-it-works-clock.svg");
+  }
+}
+
+.work-principle__text {
+  max-width: 200px;
+  margin-left: 80px;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--color-grey);
+}

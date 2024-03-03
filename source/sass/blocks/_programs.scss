@@ -1,0 +1,55 @@
+.programs {
+  padding-top: 27px;
+}
+
+.programs__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  text-align: center;
+  color: var(--color-light);
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: -27px;
+    right: -20px;
+    width: 320px;
+    height: 302px;
+    background: url("../img/index-background-cat.jpg") center no-repeat;
+  }
+
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: -27px;
+    right: -20px;
+    width: 320px;
+    height: 302px;
+    background-color: var(--color-accent-opacity);
+  }
+}
+
+.programs__text {
+  margin-bottom: 29px;
+  font-family: var(--font-family-second);
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+
+.programs__link {
+  margin-bottom: 20px;
+}
+
+.programs__list {
+  margin: 0;
+}
