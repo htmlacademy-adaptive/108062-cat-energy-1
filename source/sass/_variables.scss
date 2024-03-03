@@ -10,17 +10,16 @@
   --color-grey-dark: #222222;
   --color-grey-darkest: #111111;
   --color-dark: #000000;
-  --color-transparent: rgb(104, 183, 56, 0.85);
+  --color-accent-opacity: rgb(104, 183, 56, 0.85);
   --color-accent: #68b738;
   --color-accent-alt: #5eaa2f;
   --color-error: #ff8282;
 
-  --accent-line: 1px solid var(--color-accent);
-
   --container-width: 320px;
-  --container-margin: 0 auto;
   --container-padding-x: 20px;
 
-  --font-famili-lato: "lato", sans-serif;
-  --font-famili-oswald: "oswald", sans-serif;
+  --font-family-first: "lato", sans-serif;
+  --font-family-second: "oswald", sans-serif;
+
+  --font-title: var(--font-family-second);
 }

@@ -5,10 +5,10 @@
 .nav__list {
   z-index: 1;
   position: absolute;
-  top: 47px;
-  right: -20px;
-  left: -276px;
-  display: none;
+  top: 68px;
+  right: 0;
+  left: 0;
+  /*display: none;*/
   margin: 0;
   padding: 0;
   background-color: var(--color-light);
@@ -16,11 +16,11 @@
 }
 
 .nav__item {
-  --border-bottom: 1px solid #e6e6e6;
-  border-bottom: var(--border-bottom);
+  --border: 1px solid #e6e6e6;
+  border-bottom: var(--border);
 
   &:first-child {
-    border-top: var(--border-bottom);
+    border-top: var(--border);
   }
 }
 
@@ -29,8 +29,7 @@
   display: inline-flex;
   align-items: center;
   min-height: 66px;
-  font-family: var(--font-famili-oswald);
-  font-weight: 400;
+  font-family: var(--font-family-second);
   font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
@@ -41,20 +40,20 @@
   }
 
   &:active {
-    opacity: 1;
-  }
-
-  &:not([href]) {
     opacity: 0.3;
   }
 
-  &:active::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 8px;
-    height: 2px;
-    background-color: var(--color-accent);
+  &:not([href]) {
+    opacity: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 8px;
+      height: 2px;
+      background-color: var(--color-accent);
+    }
   }
 }

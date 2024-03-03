@@ -1,20 +1,26 @@
 .additional-products__title {
   position: relative;
+  display: inline-block;
+  margin-top: 0;
   margin-bottom: 36px;
-  font-family: var(--font-famili-oswald);
+  font-family: var(--font-title);
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   color: var(--color-dark);
+  background: var(--color-light);
+  box-shadow: 0 0 0 20px var(--color-light);
 
-  &::after {
+  &::before {
     content: "";
+    z-index: -1;
     position: absolute;
-    top: 14px;
-    right: -20px;
-    width: 54px;
-    height: 0;
-    border: var(--accent-line);
+    top: 16px;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background-color: var(--color-accent);
+    box-shadow: 100vw 0 0 var(--color-accent);
   }
 }
 
@@ -31,7 +37,7 @@
   min-height: 290px;
   margin-bottom: 35px;
   padding-bottom: 43px;
-  background-color: var(--color-transparent);
+  background-color: var(--color-accent-opacity);
 
   &::before {
     content: "";

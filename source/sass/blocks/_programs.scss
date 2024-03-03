@@ -6,7 +6,7 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 25px;
-  font-family: var(--font-famili-oswald);
+  font-family: var(--font-title);
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
@@ -32,14 +32,13 @@
     right: -20px;
     width: 320px;
     height: 302px;
-    background-color: var(--color-transparent);
+    background-color: var(--color-accent-opacity);
   }
 }
 
 .programs__text {
   margin-bottom: 29px;
-  font-family: var(--font-famili-oswald);
-  font-weight: 400;
+  font-family: var(--font-family-second);
   font-size: 14px;
   line-height: 1;
   text-align: center;

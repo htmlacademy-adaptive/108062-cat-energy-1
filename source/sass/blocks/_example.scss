@@ -6,7 +6,7 @@
 .example__title {
   margin-top: 0;
   margin-bottom: 40px;
-  font-family: var(--font-famili-oswald);
+  font-family: var(--font-title);
   font-weight: 400;
   font-size: 36px;
   line-height: 1.11;
@@ -32,8 +32,7 @@
 }
 
 .example__dd {
-  font-family: var(--font-famili-oswald);
-  font-weight: 400;
+  font-family: var(--font-family-second);
   font-size: 24px;
   line-height: 1;
   text-align: center;
@@ -44,12 +43,10 @@
   &--cost {
     & .example__dt,
     & .example__dd {
-      font-family: var(--font-famili-oswald);
-      font-weight: 400;
+      font-family: var(--font-family-second);
       font-size: 14px;
       line-height: 1.43;
       text-transform: uppercase;
-      text-align: center;
       color: var(--color-dark);
     }
   }
