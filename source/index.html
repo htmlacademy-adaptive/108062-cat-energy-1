@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,8 +10,8 @@
 
     <header class="header container">
       <a class="header__logo logo">
-        <img class="logo__img" src="img/logo-picture.svg" width="33" height="38" alt="Логотип интернет-магазина «Кэт энерджи»">
-        <img class="logo__img" src="img/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина «Кэт энерджи»">
+        <img class="logo__img-cat" src="img/logo-picture.svg" width="33" height="38" alt="Логотип интернет-магазина «Кэт энерджи»">
+        <img class="logo__img-text" src="img/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина «Кэт энерджи»">
       </a>
       <nav class="header__nav nav">
         <button class="nav__toggle nav-toggle" type="button">
@@ -18,13 +19,13 @@
         </button>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link">Главная</a>
+            <a class="nav__link nav__link--main">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="nav__link nav__link--main" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="form.html">Подбор программы</a>
+            <a class="nav__link nav__link--main" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -32,16 +33,18 @@
 
     <main class="main">
       <section class="main__programs programs container">
-        <h1 class="programs__title">Функциональное питание для котов</h1>
-        <p class="programs__text">
-          Занялся собой? Займись котом!
-        </p>
-        <img class="programs__img" src="img/index-food.png" width="280" height="270" alt="Упаковка корма «Кэт энерджи» со вкусом курицы">
-        <a class="programs__link button" href="form.html">Подобрать программу</a>
+        <div class="programs__container-inner">
+          <h1 class="programs__title">Функциональное<br> питание для котов</h1>
+          <p class="programs__text">
+            Занялся собой? Займись котом!
+          </p>
+          <img class="programs__img" src="img/index-food.png" width="280" height="270" alt="Упаковка корма «Кэт энерджи» со вкусом курицы">
+          <a class="programs__link button" href="form.html">Подобрать программу</a>
+        </div>
         <h2 class="visually-hidden">Программы</h2>
         <ul class="programs__list programs-list">
-          <li class="programs-list__item">
-            <h3 class="programs-list__title programs-list__title--slim">Похудение</h3>
+          <li class="programs-list__item programs-list__item--slim">
+            <h3 class="programs-list__title">Похудение</h3>
             <p class="programs-list__text">
               Ваш кот весит больше собаки и
               почти утратил способность лазить
@@ -51,8 +54,8 @@
             </p>
             <a class="programs-list__link" href="#">Каталог Slim</a>
           </li>
-          <li class="programs-list__item">
-            <h3 class="programs-list__title programs-list__title--pro">Набор массы</h3>
+          <li class="programs-list__item programs-list__item--pro">
+            <h3 class="programs-list__title">Набор массы</h3>
             <p class="programs-list__text">
               Заработать авторитет среди
               дворовых котов и даже собак?
@@ -73,6 +76,7 @@
               содержит только полезные
               питательные вещества.
             </p>
+            <span class="work-principle__number">1</span>
           </li>
           <li class="work-principle__item work-principle__item--bowl">
             <p class="work-principle__text">
@@ -80,6 +84,7 @@
               который нужно лишь залить
               кипятком и готово.
             </p>
+            <span class="work-principle__number">2</span>
           </li>
           <li class="work-principle__item work-principle__item--utensil">
             <p class="work-principle__text">
@@ -87,6 +92,7 @@
               обычной еды на наше
               функциональное питание.
             </p>
+            <span class="work-principle__number">3</span>
           </li>
           <li class="work-principle__item work-principle__item--clock">
             <p class="work-principle__text">
@@ -94,11 +100,12 @@
               наслаждайтесь изменениями
               к лучшему вашего питомца!
             </p>
+            <span class="work-principle__number">4</span>
           </li>
         </ul>
       </section>
       <section class="main__example example">
-        <div class="container">
+        <div class="example__container-inner container">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">
             Борис сбросил 5 кг за 2 месяца, просто
@@ -110,11 +117,11 @@
           </p>
           <dl class="example__dl">
             <div class="example__item">
-              <dt class="example__dt">Снижение веса</dt>
+              <dt class="example__dt">Снижение<br> веса</dt>
               <dd class="example__dd">5 кг</dd>
             </div>
             <div class="example__item">
-              <dt class="example__dt">Затрачено времени</dt>
+              <dt class="example__dt">Затрачено<br> времени</dt>
               <dd class="example__dd">60 дней</dd>
             </div>
             <div class="example__item example__item--cost">
@@ -138,14 +145,16 @@
         </div>
       </section>
       <section class="main__location location">
-        <div class="location__inner container">
+        <div class="location__container container">
           <h2 class="visually-hidden">Где мы находимся</h2>
-          <p class="location__text">
-            Приглашаем к сотрудничеству дилеров!
-          </p>
-          <address class="location__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+          <div class="location__container-inner">
+            <p class="location__text">
+              Приглашаем к сотрудничеству дилеров!
+            </p>
+            <address class="location__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
         </div>
         <img class="location__img" src="img/map.png" width="320" height="362" alt="Карта Санкт-Петербурга">
       </section>

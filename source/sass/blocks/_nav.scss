@@ -5,10 +5,11 @@
 .nav__list {
   z-index: 1;
   position: absolute;
-  top: 68px;
+  top: 65px;
   right: 0;
   left: 0;
-  /*display: none;*/
+  text-align: center;
+  display: none;
   margin: 0;
   padding: 0;
   background-color: var(--color-light);
@@ -54,6 +55,39 @@
       bottom: 8px;
       height: 2px;
       background-color: var(--color-accent);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav__list {
+    position: static;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 33px;
+    background-color: transparent;
+  }
+
+  .nav__item,
+  .nav__item:first-child {
+    border: none;
+  }
+
+  .nav__link {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__link--main {
+    font-size: 20px;
+    color: var(--color-light);
+
+    &:not([href])::after {
+      background-color: var(--color-light);
     }
   }
 }

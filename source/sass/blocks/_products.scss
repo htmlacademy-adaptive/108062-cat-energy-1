@@ -15,3 +15,20 @@
   line-height: 1;
   color: var(--color-dark);
 }
+
+@media (min-width: $tablet-width) {
+  .products {
+    padding-top: 65px;
+  }
+
+  .products__title {
+    margin-bottom: 84px;
+    font-size: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products {
+    padding-top: 74px;
+  }
+}
