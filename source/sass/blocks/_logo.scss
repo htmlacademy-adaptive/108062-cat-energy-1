@@ -1,9 +1,39 @@
 .logo {
+  display: flex;
+  min-width: 175px;
+  gap: 56px;
+
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
+  }
+
+  &:not([href]) {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    gap: 14px;
+  }
+
+  .logo__img-cat {
+    width: 60px;
+    height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__img-cat {
+    width: 70px;
+    height: 60px;
+  }
+
+  .logo__img-text {
+    width: 118px;
   }
 }

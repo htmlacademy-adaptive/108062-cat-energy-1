@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,8 +10,8 @@
 
     <header class="header header--inner container">
       <a class="header__logo logo" href="./index.html">
-        <img class="logo__img" src="img/logo-picture.svg" width="33" height="38" alt="Логотип интернет-магазина «Кэт энерджи»">
-        <img class="logo__img" src="img/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина «Кэт энерджи»">
+        <img class="logo__img-cat" src="img/logo-picture.svg" width="33" height="38" alt="Логотип интернет-магазина «Кэт энерджи»">
+        <img class="logo__img-text" src="img/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина «Кэт энерджи»">
       </a>
       <nav class="header__nav nav">
         <button class="nav__toggle nav-toggle" type="button">
@@ -141,15 +142,17 @@
           <p class="form__footnote">* — Обязательные поля</p>
         </form>
       </section>
-      <section class="main__location location">
-        <div class="location__inner location__inner--dark container">
+      <section class="main__location location location--inner">
+        <div class="location__container container">
           <h2 class="visually-hidden">Где мы находимся</h2>
-          <p class="location__text">
-            Приглашаем к сотрудничеству дилеров!
-          </p>
-          <address class="location__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+          <div class="location__container-inner">
+            <p class="location__text">
+              Приглашаем к сотрудничеству дилеров!
+            </p>
+            <address class="location__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
         </div>
         <img class="location__img" src="img/map.png" width="320" height="362" alt="Карта Санкт-Петербурга">
       </section>

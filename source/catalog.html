@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,8 +10,8 @@
 
     <header class="header header--inner container">
       <a class="header__logo logo" href="./index.html">
-        <img class="logo__img" src="img/logo-picture.svg" width="33" height="38" alt="Логотип интернет-магазина «Кэт энерджи»">
-        <img class="logo__img" src="img/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина «Кэт энерджи»">
+        <img class="logo__img-cat" src="img/logo-picture.svg" width="33" height="38" alt="Логотип интернет-магазина «Кэт энерджи»">
+        <img class="logo__img-text" src="img/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина «Кэт энерджи»">
       </a>
       <nav class="header__nav nav">
         <button class="nav__toggle nav-toggle" type="button">
@@ -36,8 +37,8 @@
         <h2 class="visually-hidden">Основные товары</h2>
         <ul class="products__list products-list">
           <li class="products-list__item card">
+            <h3 class="card__title">Cat Energy<br> PRO<br> 500&nbsp;г</h3>
             <img class="card__img" src="img/product-1.jpg" width="68" height="86" alt="">
-            <h3 class="card__title">Cat Energy PRO 500&nbsp;г</h3>
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -55,8 +56,8 @@
             <button class="card__button button" type="button">Заказать</button>
           </li>
           <li class="products-list__item card">
+            <h3 class="card__title">Cat Energy<br> PRO<br> 1000&nbsp;г</h3>
             <img class="card__img" src="img/product-2.jpg" width="84" height="100" alt="">
-            <h3 class="card__title">Cat Energy PRO&nbsp;1000 г</h3>
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -74,8 +75,8 @@
             <button class="card__button button" type="button">Заказать</button>
           </li>
           <li class="products-list__item card">
+            <h3 class="card__title">Cat Energy<br> PRO<br> 500&nbsp;г</h3>
             <img class="card__img" src="img/product-3.jpg" width="68" height="78" alt="">
-            <h3 class="card__title">Cat Energy PRO 500&nbsp;г</h3>
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -93,8 +94,8 @@
             <button class="card__button button" type="button">Заказать</button>
           </li>
           <li class="products-list__item card">
+            <h3 class="card__title">Cat Energy<br> PRO<br> 1000&nbsp;г</h3>
             <img class="card__img" src="img/product-4.jpg" width="84" height="100" alt="">
-            <h3 class="card__title">Cat Energy PRO 1000&nbsp;г</h3>
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -112,8 +113,8 @@
             <button class="card__button button" type="button">Заказать</button>
           </li>
           <li class="products-list__item card">
+            <h3 class="card__title">Cat Energy<br> SLIM<br> 500&nbsp;г</h3>
             <img class="card__img" src="img/product-5.jpg" width="68" height="78" alt="">
-            <h3 class="card__title">Cat Energy SLIM 500&nbsp;г</h3>
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -131,8 +132,8 @@
             <button class="card__button button" type="button">Заказать</button>
           </li>
           <li class="products-list__item card">
+            <h3 class="card__title">Cat Energy<br> SLIM<br> 1000&nbsp;г</h3>
             <img class="card__img" src="img/product-6.jpg" width="84" height="100" alt="">
-            <h3 class="card__title">Cat Energy SLIM&nbsp;1000 г</h3>
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -150,8 +151,8 @@
             <button class="card__button button" type="button">Заказать</button>
           </li>
           <li class="products-list__item card">
+            <h3 class="card__title">Cat Energy<br> SLIM<br> 500&nbsp;г</h3>
             <img class="card__img" src="img/product-7.jpg" width="72" height="84" alt="">
-            <h3 class="card__title">Cat Energy SLIM 500&nbsp;г</h3>
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -241,15 +242,17 @@
           </p>
         </div>
       </section>
-      <section class="main__location location">
-        <div class="location__inner location__inner--dark container">
+      <section class="main__location location location--inner">
+        <div class="location__container container">
           <h2 class="visually-hidden">Где мы находимся</h2>
-          <p class="location__text">
-            Приглашаем к сотрудничеству дилеров!
-          </p>
-          <address class="location__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+          <div class="location__container-inner">
+            <p class="location__text">
+              Приглашаем к сотрудничеству дилеров!
+            </p>
+            <address class="location__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
         </div>
         <img class="location__img" src="img/map.png" width="320" height="362" alt="Карта Санкт-Петербурга">
       </section>
