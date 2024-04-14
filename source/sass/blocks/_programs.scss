@@ -12,16 +12,18 @@
     position: absolute;
     top: 0;
     right: calc(0px - var(--container-padding-x));
-    width: 320px;
     height: 302px;
   }
 
   &::before {
+    width: 320px;
     background: url("../img/index-background-cat-mob.jpg") center/contain no-repeat;
   }
 
   &::after {
+    width: 100vw;
     background-color: var(--color-accent-opacity);
+    box-shadow: 100vw 0 0 var(--color-accent-opacity);
   }
 }
 
@@ -95,8 +97,7 @@
 
   .programs__link {
     grid-area: 3/1/4/2;
-    min-width: 244px;
-    max-width: 414px;
+    max-width: 244px;
     min-height: 54px;
     margin: 30px auto auto 90px;
   }
@@ -118,6 +119,10 @@
 
     &::before {
       background-image: url("../img/index-background-cat-desktop.jpg");
+    }
+
+    &::after {
+      box-shadow: 100vw -100vw 0 100vw var(--color-accent-opacity);
     }
   }
 

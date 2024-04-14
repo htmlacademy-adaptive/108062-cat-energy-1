@@ -26,6 +26,7 @@
 }
 
 .example__dl {
+  margin-top: 0;
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -34,40 +35,26 @@
 }
 
 .example__item {
-  position: relative;
-  min-width: 124px;
   display: grid;
-  row-gap: 8px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: 0;
-    width: 124px;
-    height: 56px;
-    border: 1px solid var(--color-grey-spec-4);
-    border-radius: 3px;
-  }
 
   &--cost {
     display: flex;
     margin: 0 auto;
     column-gap: 3px;
 
-    &::before {
-      display: none;
-    }
-
     & .example__dt,
     & .example__dd {
       margin: 0;
+      min-width: 0;
+      min-height: 0;
+      max-width: 100%;
       font-family: var(--font-family-second);
       font-size: 14px;
       line-height: 1.43;
       text-transform: uppercase;
       color: var(--color-dark);
       box-shadow: none;
+      border: none;
     }
   }
 }
@@ -75,7 +62,8 @@
 .example__dt {
   z-index: 1;
   grid-row: 2/3;
-  margin: 0 auto;
+  max-width: 60px;
+  margin: -10px auto 0;
   font-size: 12px;
   line-height: 1;
   text-align: center;
@@ -88,6 +76,12 @@
 .example__dd {
   grid-row: 1/2;
   margin: 0;
+  min-width: 124px;
+  max-width: 130px;
+  min-height: 56px;
+  align-content: center;
+  border: 1px solid var(--color-grey-spec-4);
+  border-radius: 3px;
   font-family: var(--font-family-second);
   font-size: 24px;
   line-height: 1;
@@ -120,16 +114,6 @@
   }
 
   .example__item {
-    min-width: 162px;
-    row-gap: 11px;
-
-    &::before {
-      top: -15px;
-      left: 0;
-      width: 162px;
-      height: 72px;
-    }
-
     &--cost {
       margin-right: 0;
       margin-left: auto;
@@ -146,6 +130,7 @@
   }
 
   .example__dt {
+    max-width: 130px;
     font-size: 14px;
     background-color: var(--color-light);
     box-shadow: 10px 0 0 var(--color-light),
@@ -157,6 +142,9 @@
   }
 
   .example__dd {
+    min-width: 162px;
+    max-width: 190px;
+    min-height: 72px;
     font-size: 30px;
     line-height: 1.23;
   }

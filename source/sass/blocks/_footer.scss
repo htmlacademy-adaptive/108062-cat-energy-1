@@ -1,10 +1,13 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: var(--color-grey-light);
+}
+
+.footer__container-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer__logo,
@@ -29,10 +32,13 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    flex-direction: row;
-    justify-content: space-between;
     padding-top: 55px;
     padding-bottom: 55px;
+  }
+
+  .footer__container-inner {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer__logo,

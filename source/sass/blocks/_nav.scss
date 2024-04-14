@@ -1,5 +1,50 @@
+.nav {
+  &--closed .nav__toggle {
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      aspect-ratio: 1;
+      background: url("../img/icons/burger.svg") center no-repeat;
+    }
+  }
+
+  &--opened .nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: var(--color-dark);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &--opened .nav__list {
+      display: block;
+    }
+  }
+}
+
 .nav__toggle {
   position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .nav__list {
@@ -8,12 +53,17 @@
   top: 65px;
   right: 0;
   left: 0;
+  max-width: 600px;
   text-align: center;
-  display: none;
   margin: 0;
   padding: 0;
+  display: none;
   background-color: var(--color-light);
   list-style-type: none;
+}
+
+.nav--opened .nav__list {
+  display: block;
 }
 
 .nav__item {

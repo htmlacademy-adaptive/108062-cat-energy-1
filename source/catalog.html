@@ -13,7 +13,7 @@
         <img class="logo__img-cat" src="img/logo-picture.svg" width="33" height="38" alt="Логотип интернет-магазина «Кэт энерджи»">
         <img class="logo__img-text" src="img/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина «Кэт энерджи»">
       </a>
-      <nav class="header__nav nav">
+      <nav class="header__nav nav nav--closed">
         <button class="nav__toggle nav-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -38,7 +38,7 @@
         <ul class="products__list products-list">
           <li class="products-list__item card">
             <h3 class="card__title">Cat Energy<br> PRO<br> 500&nbsp;г</h3>
-            <img class="card__img" src="img/product-1.jpg" width="68" height="86" alt="">
+            <img class="card__img" src="img/product-1.png" width="68" height="86" alt="">
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -57,7 +57,7 @@
           </li>
           <li class="products-list__item card">
             <h3 class="card__title">Cat Energy<br> PRO<br> 1000&nbsp;г</h3>
-            <img class="card__img" src="img/product-2.jpg" width="84" height="100" alt="">
+            <img class="card__img" src="img/product-2.png" width="84" height="100" alt="">
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -76,7 +76,7 @@
           </li>
           <li class="products-list__item card">
             <h3 class="card__title">Cat Energy<br> PRO<br> 500&nbsp;г</h3>
-            <img class="card__img" src="img/product-3.jpg" width="68" height="78" alt="">
+            <img class="card__img" src="img/product-3.png" width="68" height="78" alt="">
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -95,7 +95,7 @@
           </li>
           <li class="products-list__item card">
             <h3 class="card__title">Cat Energy<br> PRO<br> 1000&nbsp;г</h3>
-            <img class="card__img" src="img/product-4.jpg" width="84" height="100" alt="">
+            <img class="card__img" src="img/product-4.png" width="84" height="100" alt="">
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -114,7 +114,7 @@
           </li>
           <li class="products-list__item card">
             <h3 class="card__title">Cat Energy<br> SLIM<br> 500&nbsp;г</h3>
-            <img class="card__img" src="img/product-5.jpg" width="68" height="78" alt="">
+            <img class="card__img" src="img/product-5.png" width="68" height="78" alt="">
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -133,7 +133,7 @@
           </li>
           <li class="products-list__item card">
             <h3 class="card__title">Cat Energy<br> SLIM<br> 1000&nbsp;г</h3>
-            <img class="card__img" src="img/product-6.jpg" width="84" height="100" alt="">
+            <img class="card__img" src="img/product-6.png" width="84" height="100" alt="">
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -152,7 +152,7 @@
           </li>
           <li class="products-list__item card">
             <h3 class="card__title">Cat Energy<br> SLIM<br> 500&nbsp;г</h3>
-            <img class="card__img" src="img/product-7.jpg" width="72" height="84" alt="">
+            <img class="card__img" src="img/product-7.png" width="72" height="84" alt="">
             <dl class="card__dl">
               <div class="card__item">
                 <dt class="card__dt">Масса</dt>
@@ -178,68 +178,70 @@
       </section>
       <section class="main__additional-products additional-products container">
         <h2 class="additional-products__title">Дополнительные товары</h2>
-        <ul class="additional-products__list products-list">
-          <li class="products-list__item products-list__item--additional card">
-            <h3 class="card__title card__title--additional">Сахарозаменитель</h3>
-            <dl class="card__dl card__dl--additional">
-              <div class="card__item">
-                <dt class="visually-hidden">Объём</dt>
-                <dd class="card__dd">1 упаковка (100&nbsp;г)</dd>
-              </div>
-              <div class="card__item">
-                <dt class="visually-hidden">Стоимость</dt>
-                <dd class="card__dd">200&nbsp;₽</dd>
-              </div>
-            </dl>
-            <button class="card__button button" type="button">Заказать</button>
-          </li>
-          <li class="products-list__item products-list__item--additional card">
-            <h3 class="card__title card__title--additional">Питьевая вода</h3>
-            <dl class="card__dl card__dl--additional">
-              <div class="card__item">
-                <dt class="visually-hidden">Объём</dt>
-                <dd class="card__dd">5 литров</dd>
-              </div>
-              <div class="card__item">
-                <dt class="visually-hidden">Стоимость</dt>
-                <dd class="card__dd">50&nbsp;₽</dd>
-              </div>
-            </dl>
-            <button class="card__button button" type="button">Заказать</button>
-          </li>
-          <li class="products-list__item products-list__item--additional card">
-            <h3 class="card__title card__title--additional">Молоко</h3>
-            <dl class="card__dl card__dl--additional">
-              <div class="card__item">
-                <dt class="visually-hidden">Объём</dt>
-                <dd class="card__dd">1 литр</dd>
-              </div>
-              <div class="card__item">
-                <dt class="visually-hidden">Стоимость</dt>
-                <dd class="card__dd">100&nbsp;₽</dd>
-              </div>
-            </dl>
-            <button class="card__button button" type="button">Заказать</button>
-          </li>
-          <li class="products-list__item products-list__item--additional card">
-            <h3 class="card__title card__title--additional">Витамины</h3>
-            <dl class="card__dl card__dl--additional">
-              <div class="card__item">
-                <dt class="visually-hidden">Объём</dt>
-                <dd class="card__dd">1 упаковка (30&nbsp;г)</dd>
-              </div>
-              <div class="card__item">
-                <dt class="visually-hidden">Стоимость</dt>
-                <dd class="card__dd">300&nbsp;₽</dd>
-              </div>
-            </dl>
-            <button class="card__button button" type="button">Заказать</button>
-          </li>
-        </ul>
-        <div class="additional-products__text-wrapper">
-          <p class="additional-products__text">
-            Закажите все и получите чехол для кота в подарок!
-          </p>
+        <div class="additional-products__container-inner">
+          <ul class="additional-products__list products-list">
+            <li class="products-list__item products-list__item--additional card">
+              <h3 class="card__title card__title--additional">Сахарозаменитель</h3>
+              <dl class="card__dl card__dl--additional">
+                <div class="card__item card__item--additional">
+                  <dt class="visually-hidden">Объём</dt>
+                  <dd class="card__dd">1 упаковка (100&nbsp;г)</dd>
+                </div>
+                <div class="card__item card__item--additional">
+                  <dt class="visually-hidden">Стоимость</dt>
+                  <dd class="card__dd">200&nbsp;₽</dd>
+                </div>
+              </dl>
+              <button class="card__button button" type="button">Заказать</button>
+            </li>
+            <li class="products-list__item products-list__item--additional card">
+              <h3 class="card__title card__title--additional">Питьевая вода</h3>
+              <dl class="card__dl card__dl--additional">
+                <div class="card__item card__item--additional">
+                  <dt class="visually-hidden">Объём</dt>
+                  <dd class="card__dd">5 литров</dd>
+                </div>
+                <div class="card__item card__item--additional">
+                  <dt class="visually-hidden">Стоимость</dt>
+                  <dd class="card__dd">50&nbsp;₽</dd>
+                </div>
+              </dl>
+              <button class="card__button button" type="button">Заказать</button>
+            </li>
+            <li class="products-list__item products-list__item--additional card">
+              <h3 class="card__title card__title--additional">Молоко</h3>
+              <dl class="card__dl card__dl--additional">
+                <div class="card__item card__item--additional">
+                  <dt class="visually-hidden">Объём</dt>
+                  <dd class="card__dd">1 литр</dd>
+                </div>
+                <div class="card__item card__item--additional">
+                  <dt class="visually-hidden">Стоимость</dt>
+                  <dd class="card__dd">100&nbsp;₽</dd>
+                </div>
+              </dl>
+              <button class="card__button button" type="button">Заказать</button>
+            </li>
+            <li class="products-list__item products-list__item--additional card">
+              <h3 class="card__title card__title--additional">Витамины</h3>
+              <dl class="card__dl card__dl--additional">
+                <div class="card__item card__item--additional">
+                  <dt class="visually-hidden">Объём</dt>
+                  <dd class="card__dd">1 упаковка (30&nbsp;г)</dd>
+                </div>
+                <div class="card__item card__item--additional">
+                  <dt class="visually-hidden">Стоимость</dt>
+                  <dd class="card__dd">300&nbsp;₽</dd>
+                </div>
+              </dl>
+              <button class="card__button button" type="button">Заказать</button>
+            </li>
+          </ul>
+          <div class="additional-products__text-wrapper">
+            <p class="additional-products__text">
+              Закажите все и получите чехол для кота в подарок!
+            </p>
+          </div>
         </div>
       </section>
       <section class="main__location location location--inner">
@@ -258,31 +260,34 @@
       </section>
     </main>
 
-    <footer class="footer container">
-      <a class="footer__logo logo" href="./index.html">
-        <img class="logo__img" src="img/logo-text.svg" width="128" height="24" alt="Логотип интернет-магазина «Кэт энерджи»">
-      </a>
-      <ul class="footer__socials socials">
-        <li class="socials__item">
-          <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Ссылка на twitter</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--ytb" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ссылка на youtube</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--tg" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Ссылка на telegram</span>
-          </a>
-        </li>
-      </ul>
-      <a class="footer__developer-link developer" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="footer__developer-text">HTML Academy</span>
-      </a>
+    <footer class="footer">
+      <div class="footer__container-inner container">
+        <a class="footer__logo logo" href="./index.html">
+          <img class="logo__img" src="img/logo-text.svg" width="128" height="24" alt="Логотип интернет-магазина «Кэт энерджи»">
+        </a>
+        <ul class="footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Ссылка на twitter</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--ytb" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ссылка на youtube</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--tg" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Ссылка на telegram</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__developer-link developer" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="footer__developer-text">HTML Academy</span>
+        </a>
+      </div>
     </footer>
 
+    <script src="js/script.js"></script>
   </body>
 </html>

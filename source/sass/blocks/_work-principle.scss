@@ -17,10 +17,10 @@
 }
 
 .work-principle__item {
-  max-width: 250px;
   min-height: 60px;
   display: grid;
-  grid-template-columns: 80px 1fr;
+  column-gap: 20px;
+  grid-template-columns: auto 1fr;
 
   &::before {
     content: "";
@@ -106,7 +106,10 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    column-gap: 70px;
+    column-gap: 73px;
+  }
+
+  .work-principle__item {
+    max-width: 250px;
   }
 }

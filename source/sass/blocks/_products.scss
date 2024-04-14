@@ -25,10 +25,20 @@
     margin-bottom: 84px;
     font-size: 60px;
   }
+
+  .products__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .products {
     padding-top: 74px;
+  }
+
+  .products__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px 80px;
   }
 }
