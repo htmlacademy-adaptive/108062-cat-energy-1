@@ -1,4 +1,6 @@
 .socials {
-  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   /*list-style-type: none;*/
 }

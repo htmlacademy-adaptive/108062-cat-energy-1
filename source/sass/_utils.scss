@@ -15,4 +15,14 @@
   width: var(--container-width);
   margin: 0 auto;
   padding-inline: var(--container-padding-x);
+
+  @media (min-width: $tablet-width) {
+    --container-width: 768px;
+    --container-padding-x: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --container-width: 1440px;
+    --container-padding-x: 110px;
+  }
 }
