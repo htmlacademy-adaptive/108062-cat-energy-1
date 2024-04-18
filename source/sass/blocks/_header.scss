@@ -7,6 +7,12 @@
   padding-bottom: 14px;
   gap: 20px;
 
+  &--nojs {
+    @media (max-width: $mobile-width-only) {
+      display: block;
+    }
+  }
+
   &--inner {
     border-bottom: 1px solid var(--color-grey-spec-2);
   }
