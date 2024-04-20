@@ -166,7 +166,7 @@ a {
   transform: translateX(50%);
   width: 78px;
   height: 80px;
-  background: url("../../img/icons/icon_gift.svg") center no-repeat;
+  background: url("../img/icons/icon_gift.svg") center no-repeat;
 }
 
 @media (min-width: 768px) {
@@ -764,8 +764,8 @@ a {
   width: 27px;
   height: 34px;
   background-color: var(--color-grey-2);
-  -webkit-mask-image: url("../../img/icons/logo-html.svg");
-          mask-image: url("../../img/icons/logo-html.svg");
+  -webkit-mask-image: url("../img/icons/logo-html.svg");
+          mask-image: url("../img/icons/logo-html.svg");
 }
 
 @media (min-width: 768px) {
@@ -987,10 +987,10 @@ a {
   background: var(--image) right 12px center no-repeat;
 }
 .form__input--email {
-  --image: url("../../img/icons/email-input.svg");
+  --image: url("../img/icons/email-input.svg");
 }
 .form__input--tel {
-  --image: url("../../img/icons/phone-input.svg");
+  --image: url("../img/icons/phone-input.svg");
 }
 
 .form__radio {
@@ -1044,7 +1044,7 @@ a {
   transform: translate(-50%, -50%);
   width: 18px;
   height: 14px;
-  background: url("../../img/icons/checkbox.svg") center no-repeat;
+  background: url("../img/icons/checkbox.svg") center no-repeat;
 }
 
 .form__button-wrapper {
@@ -1663,14 +1663,14 @@ a {
   height: 50px;
   margin-top: -37px;
   margin-left: 7px;
-  --image: url("../../img/icons/cat-slim.svg");
+  --image: url("../img/icons/cat-slim.svg");
 }
 .programs-list__item--pro::after {
   width: 67px;
   height: 28px;
   margin-top: -30px;
   margin-left: -8px;
-  --image: url("../../img/icons/cat-mass.svg");
+  --image: url("../img/icons/cat-mass.svg");
 }
 
 .programs-list__title {
@@ -1719,7 +1719,7 @@ a {
   transform: translateY(-50%);
   width: 32px;
   height: 12px;
-  background: url("../../img/icons/arrow.svg") left -8px center no-repeat;
+  background: url("../img/icons/arrow.svg") left -8px center no-repeat;
   transition: 0.2s;
 }
 .programs-list__link:hover::after {
@@ -1991,13 +1991,13 @@ a {
   opacity: 0.3;
 }
 .socials__link--vk {
-  --image: url("../../img/icons/vkontakte.svg");
+  --image: url("../img/icons/vkontakte.svg");
 }
 .socials__link--ytb {
-  --image: url("../../img/icons/youtube.svg");
+  --image: url("../img/icons/youtube.svg");
 }
 .socials__link--tg {
-  --image: url("../../img/icons/telegram.svg");
+  --image: url("../img/icons/telegram.svg");
 }
 
 .work-principle__title {
@@ -2029,19 +2029,19 @@ a {
   content: "";
   width: 60px;
   aspect-ratio: 1;
-  background: var(--color-accent) var(--image, url("../../img/icons/how-it-works-leaf.svg")) center no-repeat;
+  background: var(--color-accent) var(--image, url("../img/icons/how-it-works-leaf.svg")) center no-repeat;
 }
 .work-principle__item--leaf {
-  --image: url("../../img/icons/how-it-works-leaf.svg");
+  --image: url("../img/icons/how-it-works-leaf.svg");
 }
 .work-principle__item--bowl {
-  --image: url("../../img/icons/how-it-works-bowl.svg");
+  --image: url("../img/icons/how-it-works-bowl.svg");
 }
 .work-principle__item--utensil {
-  --image: url("../../img/icons/how-it-works-utensil.svg");
+  --image: url("../img/icons/how-it-works-utensil.svg");
 }
 .work-principle__item--clock {
-  --image: url("../../img/icons/how-it-works-clock.svg");
+  --image: url("../img/icons/how-it-works-clock.svg");
 }
 .work-principle__item::after {
   counter-increment: list1;
