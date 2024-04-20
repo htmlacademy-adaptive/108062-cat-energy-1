@@ -1,5 +1,6 @@
 .logo {
   display: flex;
+  justify-content: center;
   min-width: 175px;
   gap: 56px;
 
@@ -18,6 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .logo {
+    justify-content: flex-start;
     gap: 14px;
   }
 

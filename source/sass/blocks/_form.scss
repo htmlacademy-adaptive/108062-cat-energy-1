@@ -152,11 +152,11 @@
   }
 
   &--email {
-    --image: url("../img/icons/email-input.svg");
+    --image: url("../../img/icons/email-input.svg");
   }
 
   &--tel {
-    --image: url("../img/icons/phone-input.svg");
+    --image: url("../../img/icons/phone-input.svg");
   }
 }
 
@@ -176,7 +176,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 13px;
-    height: 13px;
+    aspect-ratio: 1;
     border-radius: 50%;
     background-color: var(--color-accent);
   }
@@ -210,7 +210,7 @@
     transform: translate(-50%, -50%);
     width: 18px;
     height: 14px;
-    background: url("../img/icons/checkbox.svg") center no-repeat;
+    background: url("../../img/icons/checkbox.svg") center no-repeat;
   }
 }
 
