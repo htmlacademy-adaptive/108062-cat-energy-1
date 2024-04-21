@@ -35,9 +35,11 @@
   color: var(--color-grey);
 }
 
-.location__img {
+.location__map {
   display: block;
   margin: 0 auto;
+  border: none;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,8 +58,7 @@
     text-align: right;
   }
 
-  .location__img {
-    width: $tablet-width;
+  .location__map {
     height: 400px;
   }
 }
@@ -73,9 +74,5 @@
 
   .location__address {
     text-align: left;
-  }
-
-  .location__img {
-    width: $desktop-width;
   }
 }
