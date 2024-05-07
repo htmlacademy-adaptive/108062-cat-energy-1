@@ -17,7 +17,12 @@
 
   &::before {
     width: 320px;
-    background: url("../img/index-background-cat-mob.jpg") center/contain no-repeat;
+    background: url("../img/index-background-cat-mobile.jpg") center/contain no-repeat;
+    box-shadow: -224px 0 0 #4b4c4e, 224px 0 0 #4b4c4e;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-cat-mobile@2x.jpg");
+    }
   }
 
   &::after {
@@ -51,11 +56,6 @@
   color: var(--color-light);
 }
 
-.programs__img {
-  object-fit: contain;
-  margin-bottom: 3px;
-}
-
 .programs__list {
   margin: 0;
 }
@@ -68,6 +68,10 @@
     &::before,
     &::after {
       display: none;
+    }
+
+    & picture {
+      grid-area: 3/1/4/2;
     }
   }
 
@@ -118,11 +122,16 @@
     }
 
     &::before {
-      background-image: url("../img/index-background-cat-desktop.jpg");
+      background: url("../img/index-background-cat-desktop.jpg") left/cover;
+      box-shadow: none;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-cat-desktop@2x.jpg");
+      }
     }
 
     &::after {
-      box-shadow: 100vw -100vw 0 100vw var(--color-accent-opacity);
+      box-shadow: 100vw -100vw 0 100vw var(--color-accent-opacity), 100vw -100vw 0 100vw #4b4c4e;
     }
   }
 

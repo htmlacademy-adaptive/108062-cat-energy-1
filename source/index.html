@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -38,7 +42,20 @@
           <p class="programs__text">
             Занялся собой? Займись котом!
           </p>
-          <img class="programs__img" src="img/index-food.png" width="280" height="270" alt="Упаковка корма «Кэт энерджи» со вкусом курицы">
+          <picture>
+            <source media="(min-width: 1440px)" type="image/webp"
+              srcset="img/index-food-desktop.webp 1x, img/index-food-desktop@2x.webp 2x" width="552" height="499">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="img/index-food-tablet.webp 1x, img/index-food-tablet@2x.webp 2x" width="708" height="609">
+            <source type="image/webp"
+              srcset="img/index-food-mobile.webp 1x, img/index-food-mobile@2x.webp 2x" width="280" height="270">
+            <source media="(min-width: 1440px)" type="image/png"
+              srcset="img/index-food-desktop.png 1x, img/index-food-desktop@2x.png 2x" width="552" height="499">
+            <source media="(min-width: 768px)" type="image/png"
+              srcset="img/index-food-tablet.png 1x, img/index-food-tablet@2x.png 2x" width="708" height="609">
+            <img class="programs__img" src="img/index-food-mobile.png"
+              srcset="img/index-food-mobile@2x.png 2x" width="280" height="270" alt="Упаковка корма «Кэт энерджи» со вкусом курицы">
+          </picture>
           <a class="programs__link button" href="form.html">Подобрать программу</a>
         </div>
         <h2 class="visually-hidden">Программы</h2>
@@ -126,7 +143,28 @@
             </div>
           </dl>
           <div class="example__compare compare">
-            <img class="compare__img" src="img/cat-fat-half.png" width="140" height="256" alt="Толстый котик">
+            <div class="compare__img-wrapper">
+              <picture>
+                <!-- <source media="(min-width: 768px)" type="image/webp"
+                  srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp"
+                  srcset="img/cat-fat-mobile.webp 1x, img/cat-fat-mobile@2x.webp 2x" width="280" height="256"> -->
+                <source media="(min-width: 768px)" type="image/png"
+                  srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x" width="560" height="512">
+                <img class="compare__img" src="img/cat-fat-mobile.png"
+                  srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Толстый котик">
+              </picture>
+            </div>
+            <picture>
+              <!-- <source media="(min-width: 768px)" type="image/webp"
+                srcset="img/cat-slim-tablet.webp 1x, img/cat-slim-tablet@2x.webp 2x" width="560" height="512">
+              <source type="image/webp"
+                srcset="img/cat-slim-mobile.webp 1x, img/cat-slim-mobile@2x.webp 2x" width="280" height="256"> -->
+              <source media="(min-width: 768px)" type="image/png"
+                srcset="img/cat-slim-tablet.png 1x, img/cat-slim-tablet@2x.png 2x" width="560" height="512">
+              <img class="compare__img" src="img/cat-slim-mobile.png"
+                srcset="img/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Худой котик">
+            <picture>
             <button class="compare__button" type="button">
               <span class="visually-hidden">Ползунок сравнения изображений</span>
               <svg class="compare__button-img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -136,7 +174,6 @@
                 <path d="M32 20L24 11V29L32 20Z"/>
               </svg>
             </button>
-            <img class="compare__img" src="img/cat-slim-half.png" width="140" height="256" alt="Худой котик">
           </div>
         </div>
       </section>
