@@ -50,7 +50,11 @@
     right: 0;
     width: 280px;
     height: 290px;
-    background: url("../img/catalog-backround-cat-gift.jpg") center no-repeat;
+    background: url("../img/catalog-background-cat-gift-mobile.jpg") center/contain no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-background-cat-gift-mobile@2x.jpg");
+    }
   }
 }
 
@@ -87,8 +91,19 @@
   }
 
   .additional-products__text-wrapper {
+    min-height: 200px;
     justify-content: flex-end;
     align-items: center;
+
+    &::before {
+      width: 707px;
+      height: 200px;
+      background: url("../img/catalog-background-cat-gift-tablet.jpg") center/contain no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog-background-cat-gift-tablet@2x.jpg");
+      }
+    }
   }
 
   .additional-products__text {
@@ -116,6 +131,16 @@
   .additional-products__text-wrapper {
     justify-content: center;
     align-items: flex-end;
+
+    &::before {
+      width: 245px;
+      height: 288px;
+      background: url("../img/catalog-background-cat-gift-desktop.jpg") center/contain no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog-background-cat-gift-desktop@2x.jpg");
+      }
+    }
   }
 
   .additional-products__text {

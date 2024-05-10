@@ -57,7 +57,7 @@
   .products-list__item {
     &--additional {
       grid-template-columns: repeat(2, 1fr) 244px;
-      padding: 16px 0;
+      padding: 15px 0 16px 0;
       align-items: center;
       column-gap: 40px;
     }

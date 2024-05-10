@@ -1,19 +1,29 @@
 .compare {
   position: relative;
+  width: 280px;
   display: flex;
-  justify-content: center;
+  justify-self: center;
   align-items: center;
 
-  @media (min-width: $desktop-width) {
-    align-items: flex-start;
+  & > picture,
+  & > .compare__img {
+    position: absolute;
   }
 }
 
+.compare__img-wrapper {
+  z-index: 1;
+  width: 50%;
+  overflow: hidden;
+  background-color: var(--color-grey-spec);
+}
+
 .compare__img {
-  object-fit: contain;
+  max-width: 280px;
 }
 
 .compare__button {
+  z-index: 1;
   position: absolute;
   top: 50%;
   right: 50%;
@@ -94,9 +104,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .compare {
+    width: 560px;
+  }
+
+  .compare__img-wrapper {
+    background-color: transparent;
+    box-shadow: inset 0 154px 0 var(--color-light);
+
+    @media (min-width: $desktop-width) {
+      box-shadow: inset 0 128px 0 var(--color-light);
+    }
+  }
+
   .compare__img {
-    width: 280px;
-    height: 512px;
+    max-width: 560px;
   }
 
   .compare__button {
