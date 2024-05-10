@@ -1235,9 +1235,6 @@ a {
     display: block;
   }
 }
-.header--inner {
-  border-bottom: 1px solid var(--color-grey-spec-2);
-}
 @media (min-width: 768px) {
   .header {
     padding-top: 25px;
@@ -1256,13 +1253,19 @@ a {
   .header::before {
     top: 0;
     display: block;
-    width: calc(50% + var(--container-padding-x));
+    width: 50%;
     height: 694px;
     background: #3e3d41 left no-repeat;
     background-image: -webkit-image-set(url("../img/index-background-cat-desktop.jpg") type("image/jpg") 1x, url("../img/index-background-cat-desktop@2x.jpg") type("image/jpg") 2x);
     background-image: image-set(url("../img/index-background-cat-desktop.jpg") type("image/jpg") 1x, url("../img/index-background-cat-desktop@2x.jpg") type("image/jpg") 2x);
     box-shadow: inset 720px 694px 0 var(--color-accent-opacity);
   }
+}
+.header--inner {
+  border-bottom: 1px solid var(--color-grey-spec-2);
+}
+.header--inner::before {
+  display: none;
 }
 
 .location--inner {
