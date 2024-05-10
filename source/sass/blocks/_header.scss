@@ -12,7 +12,7 @@
     z-index: -1;
     position: absolute;
     bottom: -302px;
-    right: calc(0px - var(--container-padding-x));
+    right: 0;
     width: 320px;
     height: 302px;
     background: center/contain no-repeat;
@@ -25,7 +25,7 @@
     box-shadow: inset 320px 0 0 var(--color-accent-opacity),
       -224px 0 0 var(--color-accent-opacity),
       224px 0 0 var(--color-accent-opacity),
-      -224px 0 0 #515055,
+      -224px 0 0 #4c4c51,
       224px 0 0 #424147;
   }
 
