@@ -27,23 +27,27 @@
     content: "";
     width: 60px;
     aspect-ratio: 1;
-    background: var(--color-accent) var(--image, url("../img/icons/how-it-works-leaf.svg")) center no-repeat;
+    background: var(--color-accent) var(--image, url("../img/sprite.svg#leaf")) center no-repeat;
   }
 
-  &--leaf {
-    --image: url("../img/icons/how-it-works-leaf.svg");
+  &--leaf::before {
+    --image: url("../img/sprite.svg#leaf");
+    background-size: 25px 28px;
   }
 
-  &--bowl {
-    --image: url("../img/icons/how-it-works-bowl.svg");
+  &--bowl::before {
+    --image: url("../img/sprite.svg#bowl");
+    background-size: 30px 30px;
   }
 
-  &--utensil {
-    --image: url("../img/icons/how-it-works-utensil.svg");
+  &--utensil::before {
+    --image: url("../img/sprite.svg#utensil");
+    background-size: 26px 30px;
   }
 
-  &--clock {
-    --image: url("../img/icons/how-it-works-clock.svg");
+  &--clock::before {
+    --image: url("../img/sprite.svg#clock");
+    background-size: 27px 31px;
   }
 
   &::after {

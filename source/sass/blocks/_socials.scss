@@ -27,14 +27,14 @@
   }
 
   &--vk::after {
-    --image: url("../img/icons/vkontakte.svg");
+    --image: url("../img/sprite.svg#vkontakte");
   }
 
   &--ytb::after {
-    --image: url("../img/icons/youtube.svg");
+    --image: url("../img/sprite.svg#youtube");
   }
 
   &--tg::after {
-    --image: url("../img/icons/telegram.svg");
+    --image: url("../img/sprite.svg#telegram");
   }
 }

@@ -7,30 +7,8 @@
   padding-bottom: 14px;
   gap: 20px;
 
-  &::before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    bottom: -302px;
-    right: 0;
-    width: 320px;
-    height: 302px;
-    background: center/contain no-repeat;
-    background-image: image-set(
-      // url("../img/index-background-cat-mobile.webp") type("image/webp") 1x,
-      // url("../img/index-background-cat-mobile@2x.webp") type("image/webp") 2x,
-      url("../img/index-background-cat-mobile.jpg") type("image/jpg") 1x,
-      url("../img/index-background-cat-mobile@2x.jpg") type("image/jpg") 2x
-    );
-    box-shadow: inset 320px 0 0 var(--color-accent-opacity),
-      -224px 0 0 var(--color-accent-opacity),
-      224px 0 0 var(--color-accent-opacity),
-      -224px 0 0 #4c4c51,
-      224px 0 0 #424147;
-  }
-
-  &--nojs {
-    @media (max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
+    &--nojs {
       display: block;
     }
   }
@@ -39,30 +17,31 @@
     padding-top: 25px;
     padding-bottom: 0;
     border-bottom: none;
-
-    &::before {
-      display: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
     position: static;
     padding-top: 55px;
 
+    /* stylelint-disable unit-no-unknown */ /*правило отключено, т.к. не пропускает литеру "x" в названии картинок*/
     &::before {
+      content: "";
+      position: absolute;
       top: 0;
-      display: block;
+      right: 0;
       width: 50%;
       height: 694px;
-      background: #3e3d41 left no-repeat;
-      background-image: image-set(
-        // url("../img/index-background-cat-desktop.webp") type("image/webp") 1x,
-        // url("../img/index-background-cat-desktop@2x.webp") type("image/webp") 2x,
-        url("../img/index-background-cat-desktop.jpg") type("image/jpg") 1x,
-        url("../img/index-background-cat-desktop@2x.jpg") type("image/jpg") 2x
-      );
-      box-shadow: inset 720px 694px 0 var(--color-accent-opacity);
+      background: linear-gradient(rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)),
+        #414045
+        image-set(
+          // url("../img/index-background-cat-desktop.webp") type("image/webp") 1x,
+          // url("../img/index-background-cat-desktop@2x.webp") type("image/webp") 2x,
+          url("../img/index-background-cat-desktop.jpg") type("image/jpg") 1x,
+          url("../img/index-background-cat-desktop@2x.jpg") type("image/jpg") 2x
+      )
+        left/ 1041px 694px no-repeat;
     }
+    /* stylelint-enable unit-no-unknown */
   }
 
   &--inner {
