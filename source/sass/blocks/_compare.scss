@@ -23,62 +23,46 @@
 }
 
 .compare__button {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
   width: 40px;
-  height: 40px;
+  aspect-ratio: 1;
   padding: 0;
   border-radius: 50%;
-  border: none;
+  border: 2px solid var(--color-grey-2);
+  background-color: var(--color-light);
   cursor: pointer;
 
   &:hover {
-    & rect {
-      stroke: var(--color-accent);
-    }
-
-    & path {
-      fill: var(--color-accent);
-    }
+    border-color: var(--color-accent);
   }
 
   &:active {
-    & rect {
-      stroke: var(--color-accent-alt);
-      opacity: 0.6;
-    }
-
-    & path {
-      fill: var(--color-accent-alt);
-      opacity: 0.6;
-    }
+    border-color: var(--color-accent-alt);
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -108px;
-    right: 50%;
-    bottom: 38px;
-    transform: translateX(50%);
-    width: 4px;
-    border-radius: 2px;
-    background-color: var(--color-grey-2);
-  }
-
+  &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 38px;
     right: 50%;
-    bottom: -108px;
     transform: translateX(50%);
     width: 4px;
     border-radius: 2px;
     background-color: var(--color-grey-2);
+  }
+
+  &::before {
+    top: -111px;
+    bottom: 36px;
+  }
+
+  &::after {
+    top: 36px;
+    bottom: -111px;
   }
 
   &:hover::before,
@@ -88,19 +72,21 @@
 
   &:active::before,
   &:active::after {
-    background: var(--color-accent-alt);
-    opacity: 0.6;
+    background-color: var(--color-accent-alt);
+  }
+
+  &:hover .compare__button-img {
+    fill: var(--color-accent);
+  }
+
+  &:active .compare__button-img {
+    fill: var(--color-accent-alt);
   }
 }
 
 .compare__button-img {
-  & rect {
-    stroke: var(--color-grey-2);
-  }
-
-  & path {
-    fill: var(--color-grey-2);
-  }
+  vertical-align: middle;
+  fill: var(--color-grey-2);
 }
 
 @media (min-width: $tablet-width) {
@@ -123,11 +109,13 @@
 
   .compare__button {
     &::before {
-      top: -235px;
+      top: -239px;
+      bottom: 36px;
     }
 
     &::after {
-      bottom: -235px;
+      top: 36px;
+      bottom: -239px;
     }
   }
 }
