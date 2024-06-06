@@ -8,13 +8,19 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
 
     <header class="header header--nojs container">
       <a class="header__logo logo">
-        <img class="logo__img-cat" src="img/logo-picture.svg" width="33" height="38" alt="Логотип интернет-магазина «Кэт энерджи»">
+        <picture>
+          <source media="(min-width: 1440px)" type="image/svg+xml"
+            srcset="img/logo-picture-desktop.svg" width="70" height="60">
+          <source media="(min-width: 768px)" type="image/svg+xml"
+            srcset="img/logo-picture-tablet.svg" width="60" height="50">
+          <img class="logo__img-cat" src="img/logo-picture-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина «Кэт энерджи»">
+        </picture>
         <img class="logo__img-text" src="img/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина «Кэт энерджи»">
       </a>
       <nav class="header__nav nav nav--closed nav--nojs">
@@ -145,10 +151,10 @@
           <div class="example__compare compare">
             <div class="compare__img-wrapper">
               <picture>
-                <!-- <source media="(min-width: 768px)" type="image/webp"
+                <source media="(min-width: 768px)" type="image/webp"
                   srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x" width="560" height="512">
                 <source type="image/webp"
-                  srcset="img/cat-fat-mobile.webp 1x, img/cat-fat-mobile@2x.webp 2x" width="280" height="256"> -->
+                  srcset="img/cat-fat-mobile.webp 1x, img/cat-fat-mobile@2x.webp 2x" width="280" height="256">
                 <source media="(min-width: 768px)" type="image/png"
                   srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x" width="560" height="512">
                 <img class="compare__img" src="img/cat-fat-mobile.png"
@@ -156,10 +162,10 @@
               </picture>
             </div>
             <picture>
-              <!-- <source media="(min-width: 768px)" type="image/webp"
+              <source media="(min-width: 768px)" type="image/webp"
                 srcset="img/cat-slim-tablet.webp 1x, img/cat-slim-tablet@2x.webp 2x" width="560" height="512">
               <source type="image/webp"
-                srcset="img/cat-slim-mobile.webp 1x, img/cat-slim-mobile@2x.webp 2x" width="280" height="256"> -->
+                srcset="img/cat-slim-mobile.webp 1x, img/cat-slim-mobile@2x.webp 2x" width="280" height="256">
               <source media="(min-width: 768px)" type="image/png"
                 srcset="img/cat-slim-tablet.png 1x, img/cat-slim-tablet@2x.png 2x" width="560" height="512">
               <img class="compare__img" src="img/cat-slim-mobile.png"

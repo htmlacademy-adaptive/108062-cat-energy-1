@@ -7,6 +7,15 @@
   padding-bottom: 14px;
   gap: 20px;
 
+  &--inner {
+    border-bottom: 1px solid var(--color-grey-spec-2);
+
+    &::before {
+      display: none;
+    }
+  }
+
+
   @media (max-width: $mobile-width-only) {
     &--nojs {
       display: block;
@@ -16,7 +25,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 25px;
     padding-bottom: 0;
-    border-bottom: none;
+
+    &--inner {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -34,21 +46,13 @@
       background: linear-gradient(rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)),
         #414045
         image-set(
-          // url("../img/index-background-cat-desktop.webp") type("image/webp") 1x,
-          // url("../img/index-background-cat-desktop@2x.webp") type("image/webp") 2x,
+          url("../img/index-background-cat-desktop.webp") type("image/webp") 1x,
+          url("../img/index-background-cat-desktop@2x.webp") type("image/webp") 2x,
           url("../img/index-background-cat-desktop.jpg") type("image/jpg") 1x,
           url("../img/index-background-cat-desktop@2x.jpg") type("image/jpg") 2x
       )
         left/ 1041px 694px no-repeat;
     }
     /* stylelint-enable unit-no-unknown */
-  }
-
-  &--inner {
-    border-bottom: 1px solid var(--color-grey-spec-2);
-
-    &::before {
-      display: none;
-    }
   }
 }
