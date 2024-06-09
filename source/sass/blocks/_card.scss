@@ -127,6 +127,7 @@
 
     &--more::before {
       content: "";
+      z-index: -1;
       position: absolute;
       display: block;
       left: 0;
