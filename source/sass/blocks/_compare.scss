@@ -4,11 +4,6 @@
   display: flex;
   justify-self: center;
   align-items: center;
-
-  & > picture,
-  & > .compare__img {
-    position: absolute;
-  }
 }
 
 .compare__img-wrapper {
@@ -20,6 +15,10 @@
 
 .compare__img {
   max-width: 280px;
+
+  &--slim {
+    position: absolute;
+  }
 }
 
 .compare__button {

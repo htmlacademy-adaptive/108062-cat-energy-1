@@ -15,6 +15,10 @@
     }
   }
 
+  & source {
+    display: contents;
+  }
+
 
   @media (max-width: $mobile-width-only) {
     &--nojs {
