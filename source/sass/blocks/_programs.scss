@@ -4,10 +4,6 @@
   margin-bottom: 20px;
   padding-top: 27px;
 
-  & picture {
-    display: contents;
-  }
-
   &::before {
     content: "";
     grid-area: 1/1/4/2;
@@ -17,8 +13,8 @@
     height: 302px;
     background: left/contain no-repeat;
     background-image: image-set(
-      // url("../img/index-background-cat-mobile.webp") type("image/webp") 1x,
-      // url("../img/index-background-cat-mobile@2x.webp") type("image/webp") 2x,
+      url("../img/index-background-cat-mobile.webp") type("image/webp") 1x,
+      url("../img/index-background-cat-mobile@2x.webp") type("image/webp") 2x,
       url("../img/index-background-cat-mobile.jpg") type("image/jpg") 1x,
       url("../img/index-background-cat-mobile@2x.jpg") type("image/jpg") 2x
     );
