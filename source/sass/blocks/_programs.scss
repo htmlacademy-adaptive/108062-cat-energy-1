@@ -70,7 +70,7 @@
 @media (min-width: $tablet-width) {
   .programs__container-inner {
     margin-bottom: 0;
-    padding-top: 65px;
+    padding-top: 57px;
 
     &::before {
       display: none;
@@ -106,6 +106,7 @@
     max-width: 244px;
     min-height: 54px;
     margin: 30px auto auto 90px;
+    font-size: 20px;
   }
 }
 
@@ -113,16 +114,16 @@
   .programs__container-inner {
     min-height: 573px;
     margin-bottom: 82px;
-    padding-top: 110px;
+    padding-top: 103px;
   }
 
   .programs__title {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     margin-left: 80px;
   }
 
   .programs__text {
-    margin-bottom: 52px;
+    margin-bottom: 20px;
     margin-left: 80px;
   }
 

@@ -19,7 +19,7 @@
 
 .example__text {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 18px;
   font-size: 14px;
   line-height: 1.29;
   color: var(--color-grey);
@@ -84,6 +84,7 @@
   border-radius: 3px;
   font-family: var(--font-family-second);
   font-size: 24px;
+  text-transform: uppercase;
   line-height: 1;
   text-align: center;
   color: var(--color-dark);
@@ -115,6 +116,7 @@
 
   .example__item {
     &--cost {
+      margin-top: 12px;
       margin-right: 0;
       margin-left: auto;
       flex-direction: column;
@@ -164,9 +166,13 @@
     margin-bottom: 146px;
   }
 
+  .example__text {
+    margin-bottom: 67px;
+  }
+
   .example__dl {
     margin-bottom: 0;
-    row-gap: 55px;
+    row-gap: 58px;
     justify-content: flex-start;
   }
 

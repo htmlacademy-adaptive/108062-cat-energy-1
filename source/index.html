@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -136,11 +138,11 @@
           </p>
           <dl class="example__dl">
             <div class="example__item">
-              <dt class="example__dt">Снижение<br> веса</dt>
+              <dt class="example__dt">снижение<br> веса</dt>
               <dd class="example__dd">5 кг</dd>
             </div>
             <div class="example__item">
-              <dt class="example__dt">Затрачено<br> времени</dt>
+              <dt class="example__dt">затрачено<br> времени</dt>
               <dd class="example__dd">60 дней</dd>
             </div>
             <div class="example__item example__item--cost">
@@ -185,10 +187,11 @@
           <h2 class="visually-hidden">Где мы находимся</h2>
           <div class="location__container-inner">
             <p class="location__text">
-              Приглашаем к сотрудничеству дилеров!
+              Приглашаем к&nbsp;сотрудничеству дилеров!
             </p>
             <address class="location__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              <span class="location__address-text">ул. Большая Конюшенная, д. 19/8</span>
+              <span>Санкт-Петербург</span>
             </address>
           </div>
         </div>
