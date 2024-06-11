@@ -44,12 +44,20 @@
     margin-bottom: 24px;
   }
 
+  &--contacts .form__title {
+    width: 190px;
+  }
+
   &--comment {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 
   &--additional {
     margin-bottom: 34px;
+  }
+
+  &--additional .form__list {
+    row-gap: 12px;
   }
 }
 
@@ -163,7 +171,7 @@
 .form__radio {
   position: relative;
   width: 30px;
-  height: 30px;
+  aspect-ratio: 1;
   margin: 0;
   border-radius: 50%;
   border: 1px solid var(--color-grey-spec-4);
@@ -197,8 +205,9 @@
 
 .form__checkbox {
   position: relative;
+  margin: 0;
   width: 30px;
-  height: 30px;
+  aspect-ratio: 1;
   border: 1px solid var(--color-grey-spec-4);
   appearance: none;
 
@@ -229,7 +238,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    row-gap: 65px;
+    row-gap: 68px;
   }
 
   .form__fieldset-wrapper {
@@ -252,21 +261,25 @@
     }
 
     &--programs .form__label {
-      column-gap: 20px;
+      column-gap: 18px;
     }
 
-    &--contacts,
-    &--comment {
+    &--contacts {
       margin-bottom: 0;
     }
 
     &--contacts .form__title {
-      margin-bottom: 76px;
+      margin-bottom: 80px;
+      width: auto;
     }
 
     &--info .form__list,
     &--contacts .form__list {
-      row-gap: 20px;
+      row-gap: 27px;
+    }
+
+    &--comment {
+      margin-bottom: 18px;
     }
 
     &--comment .form__title {
@@ -284,13 +297,21 @@
     &--additional .form__list {
       grid-template-columns: repeat(2, 1fr);
       row-gap: 32px;
-      column-gap: 30px;
+      column-gap: 60px;
+    }
+
+    &--additional .form__label {
+      column-gap: 18px;
     }
   }
 
   .form__title {
     font-size: 36px;
     line-height: 1;
+
+    &::before {
+      top: 22px;
+    }
 
     & br {
       display: none;
@@ -302,13 +323,32 @@
     font-size: 20px;
   }
 
+  .form__radio {
+    width: 40px;
+
+    &:checked::before {
+      width: 18px;
+    }
+  }
+
+  .form__checkbox {
+    width: 40px;
+  }
+
   .form__button-wrapper {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 60px;
+    align-items: center;
+    column-gap: 58px;
+  }
+
+  .form__button {
+    min-height: 54px;
+    font-size: 20px;
   }
 
   .form__footnote {
     text-align: start;
+    letter-spacing: 1px;
   }
 }
 
@@ -330,10 +370,22 @@
       column-gap: 80px;
     }
 
+    &--contacts .form__title {
+      margin-bottom: 76px;
+    }
+
+    &--additional {
+      margin-bottom: 59px;
+    }
+
     &--additional .form__list {
       grid-template-columns: repeat(4, 1fr);
       row-gap: 32px;
-      column-gap: 74px;
+      column-gap: 81px;
+    }
+
+    &--additional .form__label {
+      column-gap: 20px;
     }
   }
 

@@ -18,7 +18,7 @@
 
 @media (min-width: $tablet-width) {
   .products {
-    padding-top: 65px;
+    padding-top: 57px;
   }
 
   .products__title {
@@ -34,11 +34,11 @@
 
 @media (min-width: $desktop-width) {
   .products {
-    padding-top: 74px;
+    padding-top: 67px;
   }
 
   .products__list {
     grid-template-columns: repeat(4, 1fr);
-    gap: 60px 80px;
+    gap: 63px 80px;
   }
 }

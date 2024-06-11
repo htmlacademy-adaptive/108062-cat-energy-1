@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -101,7 +104,7 @@
               </fieldset>
             </div>
             <fieldset class="form__fieldset form__fieldset--contacts">
-              <legend class="form__title">Контактные данные<br> (владельца кота)</legend>
+              <legend class="form__title">Контактные данные (владельца кота)</legend>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label">
@@ -165,10 +168,11 @@
           <h2 class="visually-hidden">Где мы находимся</h2>
           <div class="location__container-inner">
             <p class="location__text">
-              Приглашаем к сотрудничеству дилеров!
+              Приглашаем к&nbsp;сотрудничеству дилеров!
             </p>
             <address class="location__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              <span class="location__address-text">ул. Большая Конюшенная, д. 19/8</span>
+              <span>Санкт-Петербург</span>
             </address>
           </div>
         </div>
