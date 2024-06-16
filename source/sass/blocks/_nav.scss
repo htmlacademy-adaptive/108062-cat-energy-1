@@ -88,10 +88,12 @@
 }
 
 .nav__link {
+  --indent: 10px;
   position: relative;
   display: inline-flex;
   align-items: center;
   min-height: 66px;
+  padding: 20px var(--indent);
   font-family: var(--font-family-second);
   font-size: 20px;
   line-height: 1;
@@ -108,16 +110,6 @@
 
   &:not([href]) {
     opacity: 1;
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      left: 0;
-      bottom: 12px;
-      height: 2px;
-      background-color: var(--color-accent);
-    }
   }
 }
 
@@ -127,8 +119,7 @@
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
-    row-gap: 10px;
-    column-gap: 36px;
+    gap: 10px;
     background-color: transparent;
   }
 
@@ -140,6 +131,19 @@
   .nav__link {
     font-size: 18px;
     line-height: 1.33;
+
+    &:not([href]) {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 12px;
+        transform: translateX(-50%);
+        width: calc(100% - 2 * var(--indent));
+        height: 2px;
+        background-color: var(--color-accent);
+      }
+    }
   }
 }
 
