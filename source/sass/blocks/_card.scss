@@ -1,10 +1,13 @@
 .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 20px;
+  padding-bottom: 25px;
   align-items: center;
 
   &--more {
     grid-template-columns: 1fr;
+    padding: 25px 0;
     align-content: end;
   }
 }
@@ -107,15 +110,21 @@
 
 @media (min-width: $tablet-width) {
   .card {
+    --space-top: 81px;
     position: relative;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr auto;
+    padding: 10px 38px 40px;
     align-items: end;
     background-color: var(--color-grey-light);
+    box-shadow: inset 0 var(--space-top) 0 var(--color-light);
 
     &--more {
       position: relative;
       grid-template-rows: auto;
+      margin-top: var(--space-top);
+      padding: 50px 38px 40px;
+      box-shadow: none;
       background-color: transparent;
     }
 
@@ -242,7 +251,8 @@
     &--additional {
       grid-area: 1/2/2/3;
       margin: 0;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr minmax(42px, auto);
     }
   }
 }

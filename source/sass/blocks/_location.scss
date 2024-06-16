@@ -40,6 +40,19 @@
   margin: 0 auto;
   border: none;
   width: 100%;
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.location__img {
+  display: none;
+
+  &--nojs {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -54,10 +67,9 @@
   }
 
   .location__address {
-    font-size: 14px;
-    line-height: 1.43;
+    font-size: 16px;
+    line-height: 1.25;
     text-align: right;
-    letter-spacing: 1px;
     max-width: 157px;
   }
 
